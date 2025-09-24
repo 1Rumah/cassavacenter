@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="id">
-<head>
+
 <!-- Firebase App (core SDK) -->
 <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js"></script>
 
@@ -9,47 +9,21 @@
 
 <script>
   // Konfigurasi Firebase dari console
-  const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "your-app.firebaseapp.com",
-    projectId: "your-app-id",
-    storageBucket: "your-app.appspot.com",
-    messagingSenderId: "XXXX",
-    appId: "XXXX"
-  };
+ apiKey: "AIzaSyAqqDyAS6peq4FOuU6_c3w2GpAukXKGwrw",
+  authDomain: "ptcassava.firebaseapp.com",
+  projectId: "ptcassava",
+  storageBucket: "ptcassava.firebasestorage.app",
+  messagingSenderId: "248682073445",
+  appId: "1:248682073445:web:15af44322ac9a1554d658c",
+  measurementId: "G-55XLECY83E"
+ };
 
   // Inisialisasi Firebase
   const app = firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 </script>
 
-<button id="logoutBtn">Logout</button>
-
-<script>
-  document.getElementById("logoutBtn").addEventListener("click", () => {
-    auth.signOut().then(() => {
-      alert("Berhasil logout");
-    });
-  });
-</script>
-
-
-  <script>
-  auth.onAuthStateChanged(user => {
-    if (user) {
-      console.log("Login sebagai:", user.email);
-      // tampilkan dashboard
-    } else {
-      console.log("Belum login");
-      // tampilkan tombol login
-    }
-  });
-</script>
-
-  
-
-
-  
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>PT International Cassava Center - Official</title>
